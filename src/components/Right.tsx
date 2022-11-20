@@ -6,9 +6,9 @@ import Person3 from "../images/second.png";
 const Right: FC = () => {
   return (
     <div className="flex flex-col gap-10 items-center">
-      <div>
-        <div className="font-bold text-2xl">Yonetim Kadrosu</div>
-        <div className="max-w-[16rem]">
+      <div className="flex flex-col gap-1">
+        <div className="font-bold text-3xl">Yonetim Kadrosu</div>
+        <div className="max-w-[16rem] text-sm">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit.
         </div>
       </div>
