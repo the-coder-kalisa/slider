@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Left from "./components/Left";
-import Right from "./components/Right"
+import Right from "./components/Right";
 
 const App: FC = () => {
   return (

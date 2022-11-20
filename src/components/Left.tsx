@@ -2,7 +2,7 @@ import { ArrowBack, ArrowForward } from "@mui/icons-material";
 import { FC, useState } from "react";
 import Person1 from "../images/last.png";
 import Person2 from "../images/another.png";
-import Person3 from "../images/first.jpg"
+import Person3 from "../images/first.jpg";
 const Left: FC = () => {
   const data = [
     {
