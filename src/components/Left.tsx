@@ -10,7 +10,7 @@ import { FC } from "react";
 import Person1 from "../images/first.jpg";
 const Left: FC = () => {
   return (
-    <div className="flex items-end gap-5">
+    <div className="flex items-end gap-14">
       <img className="w-[20rem]" src={Person1} />
       <div className="flex flex-col gap-32">
         <div className="flex flex-col gap-5">
@@ -28,11 +28,11 @@ const Left: FC = () => {
             esse ipsa tempora! Minus aperiam eligendi iure.
           </div>
           <div className="flex items-center mt-10 gap-5">
-            <IconButton style={{ background: "#e8e8e8", color: "white", padding: 15 }}>
+            <IconButton style={{ background: "rgb(244 245 246)", color: "#ffc107", padding: 15 }}>
               <ArrowBack />
             </IconButton>
             <IconButton
-              style={{ background: "rgb(238,238,62)", color: "white", padding: 15 }}
+              style={{ background: "#ffc107", color: "white", padding: 15 }}
             >
               <ArrowForward />
             </IconButton>
