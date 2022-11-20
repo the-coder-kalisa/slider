@@ -1,5 +1,7 @@
 import { FC } from "react";
-import Person1 from "../images/first.jpg";
+import Person1 from "../images/last.png";
+import Person2 from "../images/another.jpg";
+import Person3 from "../images/second.png";
 
 const Right: FC = () => {
   return (
@@ -11,8 +13,8 @@ const Right: FC = () => {
         </div>
       </div>
       <div className="flex gap-1">
-        <img className="w-[12rem]" src={Person1} />
-        <img className="w-[12rem]" src={Person1} />
+        <img className="w-[12rem]" src={Person2} />
+        <img className="w-[12rem]" src={Person3} />
         <img className="w-[12rem]" src={Person1} />
       </div>
     </div>
