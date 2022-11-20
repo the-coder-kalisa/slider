@@ -1,18 +1,19 @@
 import { ArrowBack, ArrowForward } from "@mui/icons-material";
-import { IconButton } from "@mui/material";
 import { FC, useState } from "react";
-import Person1 from "../images/first.jpg";
+import Person1 from "../images/last.png";
+import Person2 from "../images/another.png";
+import Person3 from "../images/first.jpg"
 const Left: FC = () => {
   const data = [
     {
       title: "Hannah Biker",
-      image: Person1,
+      image: Person3,
       subTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos omnis, natus ratione veritatis voluptate, explicabo magni, nulla reprehenderit ut aperiam totam provident atque eius recusandae? Similique tempora accusantium cum aliquid!",
     },
     {
       title: "kalisa ineza giovanni",
-      image: Person1,
+      image: Person2,
       subTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos omnis, natus ratione veritatis voluptate, explicabo magni, nulla reprehenderit ut aperiam totam provident atque eius recusandae? Similique tempora accusantium cum aliquid!",
     },
@@ -40,7 +41,7 @@ const Left: FC = () => {
               style={{ transform: `translate(-${currentIndex * 100}%)` }}
               className="flex duration-1000 transition-all gap-5 items-end"
             >
-              <img className="min-w-[20rem]" src={Person1} />
+              <img className="min-w-[20rem]" src={data.image} />
               <div className="min-w-[23.8rem] flex flex-col gap-7 pb-[5rem]">
                 <div className="font-bold text-3xl">{data.title}</div>
                 <div className="text-xl text-[gray] font-semibold">
