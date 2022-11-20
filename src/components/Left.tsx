@@ -54,26 +54,20 @@ const Left: FC = () => {
           ))}
         </div>
         <div className="flex bottom-0 right-[15rem] absolute items-center mt-10 gap-5">
-          <IconButton
+          <button
             className="button"
             disabled={currentIndex === 0}
             onClick={prev}
-            style={{
-              background: "rgb(244 245 246)",
-              color: "#ffc107",
-              padding: 15,
-            }}
           >
             <ArrowBack />
-          </IconButton>
-          <IconButton
+          </button>
+          <button
             className="button "
             disabled={currentIndex === 2}
             onClick={next}
-            style={{ background: "#ffc107", color: "white", padding: 15 }}
           >
             <ArrowForward />
-          </IconButton>
+          </button>
         </div>
       </div>
     </div>
