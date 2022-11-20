@@ -29,6 +29,7 @@ button {
   display: flex;
   flex-direction: row-reverse;
   min-width: 43rem;
+  margin: 0 auto;
   overflow: hidden;
 }
 .first-each {
@@ -67,7 +68,7 @@ button {
 }
 .second {
   display: flex;
-  min-width: 70rem;
+  min-width: 56rem;
   flex-direction: row-reverse;
   overflow-x: hidden;
 }
@@ -76,19 +77,19 @@ button {
   transition-duration: 1000ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  min-width: 70rem;
+  min-width: 56rem;
   gap: 1.25rem;
   align-items: flex-end;
 }
 .each-image-second {
-  min-width: 20rem;
+  width: 20rem;
 }
 .second-data {
   display: flex;
   flex-direction: column;
   padding-bottom: 5rem;
-  min-width: 23.8rem;
   gap: 1.75rem;
+  overflow-wrap: break-word;
 }
 .second-title {
   font-weight: 700;
@@ -124,6 +125,27 @@ button {
 .button {
   background-color: #ffc107;
   border-radius: 50%;
-  padding: 15px;
+  padding: 10px;
   color: white;
+}
+
+@media screen and (max-width: 1448px) {
+  .each-image {
+    width: 14vw;
+  }
+  .first-each {
+    min-width: 50vw;
+  }
+  .first {
+    min-width: 50vw;
+  }
+  .each-image-second {
+    width: 20vw;
+  }
+  .second {
+    min-width: 50vw;
+  }
+  .second-each {
+    min-width: 50vw;
+  }
 }
