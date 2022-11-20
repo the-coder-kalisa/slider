@@ -32,7 +32,7 @@ const Left: FC = () => {
               <ArrowBack />
             </IconButton>
             <IconButton
-              style={{ background: "rgb(196, 196, 64)", color: "white", padding: 15 }}
+              style={{ background: "rgb(238,238,62)", color: "white", padding: 15 }}
             >
               <ArrowForward />
             </IconButton>

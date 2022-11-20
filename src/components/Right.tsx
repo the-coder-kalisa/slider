@@ -12,10 +12,10 @@ const Right: FC = () => {
           Lorem ipsum dolor sit, amet consectetur adipisicing elit.
         </div>
       </div>
-      <div className="flex gap-1">
-        <img className="w-[12rem]" src={Person2} />
-        <img className="w-[12rem]" src={Person3} />
-        <img className="w-[12rem]" src={Person1} />
+      <div className="flex gap-3">
+        <img className="w-[13rem]" src={Person2} />
+        <img className="w-[13rem]" src={Person3} />
+        <img className="w-[13rem]" src={Person1} />
       </div>
     </div>
   );

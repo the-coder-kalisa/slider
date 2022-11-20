@@ -4,9 +4,11 @@ import Right from "./components/Right";
 
 const App: FC = () => {
   return (
-    <div className="flex h-screen gap-4 items-center justify-center">
-      <Right />
-      <Left />
+    <div className="flex h-screen items-center justify-center">
+      <div className="flex items-end gap-4">
+        <Right />
+        <Left />
+      </div>
     </div>
   );
 };
