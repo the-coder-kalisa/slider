@@ -11,13 +11,13 @@ const Left: FC = () => {
       body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos omnis, natus ratione veritatis voluptate, explicabo magni, nulla reprehenderit ut aperiam totam provident atque eius recusandae? Similique tempora accusantium cum aliquid!",
     },
     {
-      title: "Hannah Biker",
+      title: "kalisa ineza giovanni",
       image: Person1,
       subTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos omnis, natus ratione veritatis voluptate, explicabo magni, nulla reprehenderit ut aperiam totam provident atque eius recusandae? Similique tempora accusantium cum aliquid!",
     },
     {
-      title: "Hannah Biker",
+      title: "fadno",
       image: Person1,
       subTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos omnis, natus ratione veritatis voluptate, explicabo magni, nulla reprehenderit ut aperiam totam provident atque eius recusandae? Similique tempora accusantium cum aliquid!",
