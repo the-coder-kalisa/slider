@@ -75,12 +75,12 @@ const App: FC = () => {
                 </div>
               ))}
             </div>
-            <div className="flex min-w-[70rem] overflow-x-hidden">
+            <div className="flex min-w-[70rem] flex-row-reverse overflow-x-hidden">
               {data.second.map((data, index) => (
                 <div
                   key={index}
-                  style={{ transform: `translate(-${currentIndex * 100}%)` }}
-                  className="flex duration-1000 transition-all min-w-[60rem] gap-5 items-end"
+                  style={{ transform: `translate(${currentIndex * 100}%)` }}
+                  className="flex duration-1000 transition-all min-w-[70rem] gap-5 items-end"
                 >
                   <img className="min-w-[20rem]" src={data.image} />
                   <div className="min-w-[23.8rem] flex flex-col gap-7 pb-[5rem]">
