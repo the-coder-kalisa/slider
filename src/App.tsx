@@ -1,11 +1,11 @@
-import { FC, useState } from "react";
+import { useState } from "react";
 import Person2 from "./images/another.png";
 import Person3 from "./images/second.png";
 import Person1 from "./images/last.png";
 import Person4 from "./images/first.jpg";
 import { ArrowBack, ArrowForward } from "@mui/icons-material";
 
-const App: FC = () => {
+const App = () => {
   const second = [
     {
       title: "Hannah Biker",
@@ -52,43 +52,43 @@ const App: FC = () => {
   };
   const [currentIndex, setCurrentIndex] = useState(0);
   return (
-    <div className="flex h-screen items-center justify-center">
-      <div className="relative overflow-hidden w-[100rem] flex">
+    <div className="container">
+      <div className="sub-container">
         {data.map((data, index) => (
-          <div key={index} className="flex items-end overflow-hidden">
-            <div className="flex flex-row-reverse min-w-[43rem] overflow-hidden">
+          <div key={index} className=" each-data">
+            <div className="first">
               {data.first.map((data, index) => (
                 <div
                   key={index}
                   style={{ transform: `translateX(${currentIndex * 100}%)` }}
-                  className="flex min-w-[43rem] duration-1000 transition-all flex-col gap-20 items-center"
+                  className="first-each"
                 >
-                  <div className="flex flex-col gap-2">
-                    <div className="font-bold text-3xl">{data.name}</div>
-                    <div className="max-w-[16rem] text-lg">{data.subname}</div>
+                  <div className=" first-left">
+                    <div className="first-left-title">{data.name}</div>
+                    <div className="first-left-sub">{data.subname}</div>
                   </div>
-                  <div className="flex gap-4">
+                  <div className="images">
                     {data.images.map((image, index) => (
-                      <img className="w-[13rem]" key={index} src={image} />
+                      <img className="each-image" key={index} src={image} />
                     ))}
                   </div>
                 </div>
               ))}
             </div>
-            <div className="flex min-w-[70rem] flex-row-reverse overflow-x-hidden">
+            <div className="second">
               {data.second.map((data, index) => (
                 <div
                   key={index}
                   style={{ transform: `translate(${currentIndex * 100}%)` }}
-                  className="flex duration-1000 transition-all min-w-[70rem] gap-5 items-end"
+                  className="second-each"
                 >
-                  <img className="min-w-[20rem]" src={data.image} />
-                  <div className="min-w-[23.8rem] flex flex-col gap-7 pb-[5rem]">
-                    <div className="font-bold text-3xl">{data.title}</div>
-                    <div className="text-xl text-[gray] font-semibold">
+                  <img className="each-image-second" src={data.image} />
+                  <div className="second-data">
+                    <div className="second-title">{data.title}</div>
+                    <div className="second-sub-title">
                       {data.subTitle}
                     </div>
-                    <div className="max-w-[25rem] font-medium text-[#616161] ">
+                    <div className="second-body">
                       {data.body}
                     </div>
                   </div>
@@ -97,7 +97,7 @@ const App: FC = () => {
             </div>
           </div>
         ))}
-        <div className="flex bottom-0 right-[25rem] absolute items-center mt-10 gap-5">
+        <div className="flex changes bottom-0 right-[25rem] absolute items-center mt-10 gap-5">
           <button
             className="button"
             disabled={currentIndex === 0}

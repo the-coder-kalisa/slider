@@ -1,6 +1,122 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-container {
+  overflow-x: hidden;
+  display: flex;
+  position: relative;
+  width: 100rem;
+}
+.each-data {
+  display: flex;
+  align-items: flex-end;
+  overflow-x: hidden;
+}
+.first {
+  display: flex;
+  flex-direction: row-reverse;
+  min-width: 43rem;
+  overflow: hidden;
+}
+.first-each {
+  display: flex;
+  min-width: 43rem;
+  transition-duration: 1000ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+}
+.first-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.first-left-title {
+  font-weight: 700;
+  font-size: 1.875rem /* 30px */;
+  line-height: 2.25rem /* 36px */;
+}
+
+.first-left-sub {
+  max-width: 16rem;
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
+}
+
+.images {
+  display: flex;
+  gap: 1rem;
+}
+.each-image {
+  width: 13rem;
+}
+.second {
+  display: flex;
+  min-width: 70rem;
+  flex-direction: row-reverse;
+  overflow-x: hidden;
+}
+.second-each {
+  display: flex;
+  transition-duration: 1000ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 70rem;
+  gap: 1.25rem;
+  align-items: flex-end;
+}
+.each-image-second {
+  min-width: 20rem;
+}
+.second-data {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5rem;
+  min-width: 23.8rem;
+  gap: 1.75rem;
+}
+.second-title {
+  font-weight: 700;
+  font-size: 1.875rem /* 30px */;
+  line-height: 2.25rem /* 36px */;
+}
+
+.scond-sub-title {
+  color: gray;
+  font-weight: 600;
+  font-size: 1.25rem /* 20px */;
+  line-height: 1.75rem /* 28px */;
+}
+
+.second-body {
+  max-width: 25rem;
+  color: #616161;
+  font-weight: 500;
+}
+.changes {
+  display: flex;
+  bottom: 0;
+  right: 25rem;
+  position: absolute;
+  align-items: center;
+  margin-top: 2.5rem;
+  gap: 1.25rem;
+}
 .button:disabled {
   background-color: rgb(244 245 246);
   color: #ffc107;
