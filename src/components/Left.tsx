@@ -15,10 +15,10 @@ const Left: FC = () => {
       <div className="flex flex-col gap-32">
         <div className="flex flex-col gap-5">
           <div className="font-bold text-3xl">Hannah Biker</div>
-          <div className="text-[gray] text-xl font-semibold">
+          <div className="text-xl text-[gray] font-semibold">
             Lorem ipsum dolor sit, amet
           </div>
-          <div className="max-w-[25rem] ">
+          <div className="max-w-[25rem] font-medium text-[#616161] ">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
             quidem illum consequuntur natus pariatur voluptatem reiciendis a
             temporibus architecto ea. Quidem impedit facilis ad adipisci nulla
@@ -28,11 +28,11 @@ const Left: FC = () => {
             esse ipsa tempora! Minus aperiam eligendi iure.
           </div>
           <div className="flex items-center mt-10 gap-5">
-            <IconButton style={{ background: "#e8e8e8", color: "white" }}>
+            <IconButton style={{ background: "#e8e8e8", color: "white", padding: 15 }}>
               <ArrowBack />
             </IconButton>
             <IconButton
-              style={{ background: "rgb(196, 196, 64)", color: "white" }}
+              style={{ background: "rgb(196, 196, 64)", color: "white", padding: 15 }}
             >
               <ArrowForward />
             </IconButton>
