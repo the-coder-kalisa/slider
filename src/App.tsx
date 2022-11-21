@@ -103,14 +103,14 @@ const App = () => {
             disabled={currentIndex === 0}
             onClick={prev}
           >
-            <ArrowBack />
+            <ArrowBack className="icon"/>
           </button>
           <button
             className="button "
             disabled={currentIndex === 2}
             onClick={next}
           >
-            <ArrowForward />
+            <ArrowForward className="icon"/>
           </button>
         </div>
       </div>

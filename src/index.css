@@ -128,8 +128,63 @@ button {
   padding: 10px;
   color: white;
 }
-
+@media screen and (max-width: 953px) {
+  .each-image {
+    width: 9rem;
+  }
+  .each-image-second {
+    width: 13rem;
+  }
+}
+@media screen and (max-width: 907px) {
+  .each-data {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  .first {
+    width: 20rem;
+  }
+  .second {
+    width: 20rem;
+  }
+  .first-each {
+    width: 20rem;
+  }
+  .second-each {
+    width: 20rem;
+  }
+}
 @media screen and (max-width: 1448px) {
+  .icon {
+    width: 7px;
+    height: 7px;
+  }
+  .second-body {
+    font-size: 15px;
+  }
+  .first-each {
+    gap: 3rem;
+  }
+  .first-left-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .second-data {
+    gap: 0.7rem;
+    padding-bottom: 3.5rem;
+  }
+  .changes {
+    right: calc(20vw - 10px);
+    margin-top: 0rem;
+  }
+  .second-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .button {
+    padding: 7px;
+  }
   .each-image {
     width: 14vw;
   }
