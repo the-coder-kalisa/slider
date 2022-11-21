@@ -164,7 +164,7 @@ button {
   }
 }
 @media screen and (max-width: 808px) {
-  .second-each{
+  .second-each {
     flex-direction: column;
     align-items: center;
   }

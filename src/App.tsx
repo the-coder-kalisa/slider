@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Person2 from "./images/another.png";
-import Person3 from "./images/second.png"
+import Person3 from "./images/second.png";
 import Person1 from "./images/last.png";
 import Person4 from "./images/first.jpg";
-import { ArrowBack, ArrowForward } from "@mui/icons-material";
+import { ArrowBack, ArrowForward } from "@mui/icons-material"
 
 const App = () => {
   const second = [
