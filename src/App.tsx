@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Person2 from "./images/another.png";
-import Person3 from "./images/second.png";
+import Person3 from "./images/second.png"
 import Person1 from "./images/last.png";
 import Person4 from "./images/first.jpg";
 import { ArrowBack, ArrowForward } from "@mui/icons-material";
@@ -85,12 +85,8 @@ const App = () => {
                   <img className="each-image-second" src={data.image} />
                   <div className="second-data">
                     <div className="second-title">{data.title}</div>
-                    <div className="second-sub-title">
-                      {data.subTitle}
-                    </div>
-                    <div className="second-body">
-                      {data.body}
-                    </div>
+                    <div className="second-sub-title">{data.subTitle}</div>
+                    <div className="second-body">{data.body}</div>
                   </div>
                 </div>
               ))}
@@ -103,14 +99,14 @@ const App = () => {
             disabled={currentIndex === 0}
             onClick={prev}
           >
-            <ArrowBack className="icon"/>
+            <ArrowBack className="icon" />
           </button>
           <button
             className="button "
             disabled={currentIndex === 2}
             onClick={next}
           >
-            <ArrowForward className="icon"/>
+            <ArrowForward className="icon" />
           </button>
         </div>
       </div>
